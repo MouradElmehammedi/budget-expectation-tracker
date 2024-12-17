@@ -73,7 +73,7 @@ export function BudgetForm({ onSubmit, currency }: BudgetFormProps) {
               <FormControl>
                 <Input
                   type="number"
-                  className="h-12 bg-blue-100/50 dark:bg-blue-950/20 rounded-lg border-0"
+                  className="h-12 bg-blue-100/50 dark:bg-blue-400/20 rounded-lg border-0"
                   placeholder="0"
                   {...field}
                   onChange={(e) => field.onChange(Number(e.target.value))}
@@ -99,7 +99,7 @@ export function BudgetForm({ onSubmit, currency }: BudgetFormProps) {
                   <FormControl>
                     <Input
                       type="number"
-                      className="h-12 bg-blue-100/50 dark:bg-blue-950/20 rounded-lg border-0"
+                      className="h-12 bg-blue-100/50 dark:bg-blue-400/20 rounded-lg border-0"
                       placeholder="0"
                       {...field}
                       onChange={(e) => field.onChange(Number(e.target.value))}
@@ -118,7 +118,7 @@ export function BudgetForm({ onSubmit, currency }: BudgetFormProps) {
                   <FormLabel>Frequency</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <SelectTrigger className="h-12 bg-blue-100/50 dark:bg-blue-950/20 rounded-lg border-0">
+                      <SelectTrigger className="h-12 bg-blue-100/50 dark:bg-blue-400/20 rounded-lg border-0">
                         <SelectValue placeholder="Monthly" />
                       </SelectTrigger>
                     </FormControl>
@@ -165,7 +165,7 @@ export function BudgetForm({ onSubmit, currency }: BudgetFormProps) {
                   <FormControl>
                     <Input
                       type="number"
-                      className="h-12 bg-blue-100/50 dark:bg-blue-950/20 rounded-lg border-0"
+                      className="h-12 bg-blue-100/50 dark:bg-blue-400/20 rounded-lg border-0"
                       placeholder="1"
                       {...field}
                       onChange={(e) => field.onChange(Number(e.target.value))}
@@ -184,7 +184,7 @@ export function BudgetForm({ onSubmit, currency }: BudgetFormProps) {
                   <FormLabel>Period</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <SelectTrigger className="h-12 bg-blue-100/50 dark:bg-blue-950/20 rounded-lg border-0">
+                      <SelectTrigger className="h-12 bg-blue-100/50 dark:bg-blue-400/20 rounded-lg border-0">
                         <SelectValue placeholder="Months" />
                       </SelectTrigger>
                     </FormControl>
@@ -203,7 +203,7 @@ export function BudgetForm({ onSubmit, currency }: BudgetFormProps) {
 
         <Button 
           type="submit" 
-          className="w-full h-12 bg-blue-600 hover:bg-blue-700 rounded-lg text-base font-medium"
+          className="w-full h-12 bg-blue-600  dark:text-white/80  hover:bg-blue-700 rounded-lg text-base font-medium"
         >
           Calculate Budget Expectation
         </Button>

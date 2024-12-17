@@ -133,7 +133,7 @@ export function ExpenseForm({ currency, onExpensesChange }: ExpenseFormProps) {
               placeholder={`Total Monthly Expenses (${currencySymbol})`}
               value={totalExpense}
               onChange={(e) => handleTotalExpenseChange(e.target.value)}
-              className="h-12 bg-blue-100/50 dark:bg-blue-950/20 rounded-lg border-0"
+              className="h-12 bg-blue-100/50 dark:bg-blue-400/20 rounded-lg border-0"
               min="0"
               step="0.01"
             />
@@ -149,7 +149,7 @@ export function ExpenseForm({ currency, onExpensesChange }: ExpenseFormProps) {
                   placeholder="Expense name"
                   value={expenseName}
                   onChange={(e) => setExpenseName(e.target.value)}
-                  className="h-12 bg-blue-100/50 dark:bg-blue-950/20 rounded-lg border-0"
+                  className="h-12 bg-blue-100/50 dark:bg-blue-400/20 rounded-lg border-0"
                 />
                 
                 <Input
@@ -157,7 +157,7 @@ export function ExpenseForm({ currency, onExpensesChange }: ExpenseFormProps) {
                   placeholder={`Amount (${currencySymbol})`}
                   value={expenseAmount}
                   onChange={(e) => setExpenseAmount(e.target.value)}
-                  className="h-12 bg-blue-100/50 dark:bg-blue-950/20 rounded-lg border-0"
+                  className="h-12 bg-blue-100/50 dark:bg-blue-400/20 rounded-lg border-0"
                   min="0"
                   step="0.01"
                 />
@@ -166,7 +166,7 @@ export function ExpenseForm({ currency, onExpensesChange }: ExpenseFormProps) {
                   value={frequency} 
                   onValueChange={(value: "daily" | "monthly" | "yearly") => setFrequency(value)}
                 >
-                  <SelectTrigger className="h-12 bg-blue-100/50 dark:bg-blue-950/20 rounded-lg border-0">
+                  <SelectTrigger className="h-12 bg-blue-100/50 dark:bg-blue-400/20 rounded-lg border-0">
                     <SelectValue placeholder="Frequency" />
                   </SelectTrigger>
                   <SelectContent>
@@ -180,7 +180,7 @@ export function ExpenseForm({ currency, onExpensesChange }: ExpenseFormProps) {
               <Button 
                 type="button" 
                 onClick={addExpense}
-                className="w-full h-12 bg-blue-600 hover:bg-blue-700 rounded-lg"
+                className="w-full h-12 bg-blue-600 dark:text-white/80 hover:bg-blue-700 rounded-lg"
               >
                 Add Expense
               </Button>
